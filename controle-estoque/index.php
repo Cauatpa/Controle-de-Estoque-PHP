@@ -92,7 +92,7 @@ $classeTotalRecebido = $totalRecebido < $totalEsperado
                 $estoque = $p['quantidade_recebida'] - $defeito;
                 $dif = $p['quantidade_esperada'] - $estoque;
 
-                /* STATUS INVERTIDO CONFORME PEDIDO */
+                /* STATUS */
                 if ($dif == 0) $status = 'success';
                 elseif ($dif > 0) $status = 'danger';
                 else $status = 'warning';
@@ -223,5 +223,6 @@ $classeTotalRecebido = $totalRecebido < $totalEsperado
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>
