@@ -44,7 +44,7 @@ $data = json_encode([
     'rows' => $rows
 ]);
 
-$url = 'https://script.google.com/macros/s/AKfycbxuo8UeVktuvudojXUXDammGQITMYd73iLAfzJ3utn-YtFbONQKDLGY0v1m8z8w3PmNFQ/exec';
+$url = '';
 
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_POST, true);
@@ -53,3 +53,4 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_exec($ch);
 curl_close($ch);
+
